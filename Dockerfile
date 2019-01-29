@@ -23,5 +23,9 @@ RUN set -eux; \
     rm -rf /var/lib/apt/lists/*;\
     apt-get clean
 
+# Add files.
+ADD root/.bash_aliases
+# Set environment variables.
+ENV HOME /root
 
 ENTRYPOINT ["/bin/bash"]
