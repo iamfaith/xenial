@@ -24,7 +24,7 @@ RUN set -eux; \
     apt-get clean
 
 # Add files.
-ADD root/.bash_aliases
+ADD root/.bash_aliases root/.bash_aliases
 # Set environment variables.
 ENV HOME /root
 
