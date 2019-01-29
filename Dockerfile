@@ -21,3 +21,5 @@ RUN set -eux; \
 
 RUN apt-get update && apt-get -y install curl && apt-get -y install wget
 RUN apt-get clean
+
+ENTRYPOINT ["/bin/bash"]
