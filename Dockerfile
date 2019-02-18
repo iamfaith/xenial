@@ -2,7 +2,7 @@ FROM       ubuntu:xenial
 MAINTAINER faith
 
 RUN apt-get update; \
-    apt-get install -y nano telnet vim git curl wget net-tools
+    apt-get install -y nano telnet vim git curl wget net-tools iputils-ping
 
 
 RUN set -eux; \
