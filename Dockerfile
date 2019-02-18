@@ -2,14 +2,8 @@ FROM       ubuntu:xenial
 MAINTAINER faith
 
 RUN apt-get update; \
-    apt-get install -y nano
+    apt-get install -y nano telnet vim git curl wget
 
-RUN apt-get install -y telnet
-RUN apt-get install -y vim
-# Install software 
-RUN apt-get install -y git
-
-RUN apt-get -y install curl && apt-get -y install wget
 
 RUN set -eux; \
     apt-get install -y --no-install-recommends \
